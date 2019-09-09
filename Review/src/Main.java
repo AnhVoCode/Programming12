@@ -6,6 +6,6 @@ public class Main {
 
         //Trial for quadratic equation
         Problems b = new Problems();
-        b.quadraticEquation(-3,11,5);
+        b.quadraticEquation(1,4,5,1);
     }
 }

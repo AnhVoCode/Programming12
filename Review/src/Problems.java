@@ -25,15 +25,16 @@ public class Problems {
     }
 
     //Solve quadratic equation in the form ax^2 + bx + c = constant
-    public void quadraticEquation(double a, double b, double c){
+    public void quadraticEquation(double a, double b, double c, double constant){
         double root1 = 0;
         double root2 = 0;
+
         //if a = 0; x is undefined
         if(a == 0){
             System.out.println("No solution");
         }
         //find discriminant
-        double d = Math.pow(b,2) - 4*a*c;
+        double d = Math.pow(b,2) - 4*a*(c - constant);
 
         //if discriminant < 0, no solution
         if(d<0){
@@ -53,6 +54,23 @@ public class Problems {
            System.out.format("Root 1 = Root 2 = %.2f",root1);
         }
     }
+        //Return absolute value of n - mid x mid x mid to 
 
-    
+        //Using binary search to find the cube root - mid
+        public void cubeRoot(double n){
+            //Set start and end to the binary search
+           double start = 0;
+           double end = n;
+
+           //Set precision (error accepted)
+            double e = 0.0000001;
+
+
+            //find the cube root (mid) of n
+            while(true){
+
+            }
+
+
+        }
 }
