@@ -28,6 +28,6 @@ public class Problems {
 
     //Solve quadratic equation in the form ax^2 + bx + c = constant
     public void quadraticEquation(double a, double b, double c){
-        
+
     }
 }
