@@ -11,7 +11,7 @@ public class Main {
         //Trial for cube root
         System.out.println();
         Problems c = new Problems();
-        System.out.println(c.cubeRoot(-3));
+        System.out.println(c.cubeRoot(3));
 
 
     }
