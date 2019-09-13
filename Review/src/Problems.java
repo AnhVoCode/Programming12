@@ -1,17 +1,27 @@
 public class Problems {
-    double x;
-    double root;
+    //Variables
+    double a;
+    double b;
+    double c;
+    double x; // Solution
+
+    double x1, x2; //Solutions for quadratic equation
+
+    double d; //discriminant
+    double root; //Cube root
+    double diff; //Difference between n and its root*root*root (for precision)
 
     //Methods
 
     //LINEAR EQUATION
     public void linearEquation(double a, double b, double c){
         //if a = b = 0; x can be any real value
-
+        this.a = a;
+        this.b = b;
+        this.c = c;
         if(a == 0 && b==0 && c==0) {
             System.out.println("Infinite solution");
-            x = Double.NEGATIVE_INFINITY;
-            x = Double.POSITIVE_INFINITY;
+
         }
 
         else {
@@ -29,15 +39,15 @@ public class Problems {
 
     //QUADRATIC EQUATION
     public void quadraticEquation(double a, double b, double c, double constant){
-        double root1 = 0;
-        double root2 = 0;
-
+        this.a = a;
+        this.b = b;
+        this.c = c;
         //if a = 0; x is undefined
         if(a == 0){
             System.out.println("No solution");
         }
         //find discriminant
-        double d = Math.pow(b,2) - 4*a*(c - constant);
+        d = Math.pow(b,2) - 4*a*(c - constant);
 
         //if discriminant less than 0, no solution
         if(d<0){
@@ -46,15 +56,15 @@ public class Problems {
 
         //if discriminant greater than 0, there will be two different real roots
        else if(d>0){
-           root1 = -b + Math.sqrt(d);
-           root2 = -b - Math.sqrt(d);
-            System.out.format("Root 1 = %.2f, r and Root 2 = %.2f", root1, root2);
+           x1 = -b + Math.sqrt(d);
+           x2 = -b - Math.sqrt(d);
+            System.out.format("Root 1 = %.2f, r and Root 2 = %.2f", x1, x2);
         }
 
         //if discriminant equals 0, there will be one or two same real roots.
        else if(d == 0){
-           root1 = root2 = -b/(2*a);
-           System.out.format("Root 1 = Root 2 = %.2f",root1);
+           x1 = x2 = -b/(2*a);
+           System.out.format("Root 1 = Root 2 = %.2f",x1);
         }
     }
 
@@ -62,10 +72,12 @@ public class Problems {
         //Return absolute value of n - root*root*root for the precision
         public double diff(double n, double root){
             if(n>(root*root*root)){
-                return (n-(root*root*root));
+                diff = n-Math.pow(root,3);
+                return diff;
             }
             else{
-                return ((root*root*root)-n);
+                diff = Math.pow(root,3) - n;
+                return diff;
             }
 
         }

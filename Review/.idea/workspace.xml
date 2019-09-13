@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7106bd-3161-4185-b3e5-000fd8440817" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Review.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Review.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Review/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Review/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Review/Problems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Review/Problems.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProblemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProblemsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -35,21 +30,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="-996">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ProblemsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="245">
+              <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,11 +72,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="543" />
+    <option name="y" value="39" />
+    <option name="width" value="844" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -89,22 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Review" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Review" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Review" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Review" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -139,19 +119,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemsTest.testIfAllParameterEqualZero">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.ProblemsTest.testIfNegative">
+    <configuration name="ProblemsTest.testAbsoluteValueOfDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Review" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProblemsTest" />
+      <option name="METHOD_NAME" value="testAbsoluteValueOfDiff" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProblemsTest.testIfAllParameterEqualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProblemsTest.testIfDiscriminantEqual0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Review" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProblemsTest" />
-      <option name="METHOD_NAME" value="testIfAllParameterEqualZero" />
+      <option name="METHOD_NAME" value="testIfDiscriminantEqual0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemsTest.testIfDiscriminantGreatThan0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Review" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProblemsTest" />
+      <option name="METHOD_NAME" value="testIfDiscriminantGreatThan0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemsTest.testIfNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Review" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProblemsTest" />
+      <option name="METHOD_NAME" value="testIfNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemsTest.testIfaNotEqualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Review" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProblemsTest" />
+      <option name="METHOD_NAME" value="testIfaNotEqualZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,8 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProblemsTest.testIfAllParameterEqualZero" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ProblemsTest.testIfNegative" />
+        <item itemvalue="JUnit.ProblemsTest.testAbsoluteValueOfDiff" />
+        <item itemvalue="JUnit.ProblemsTest.testIfDiscriminantEqual0" />
+        <item itemvalue="JUnit.ProblemsTest.testIfaNotEqualZero" />
+        <item itemvalue="JUnit.ProblemsTest.testIfDiscriminantGreatThan0" />
       </list>
     </recent_temporary>
   </component>
@@ -180,35 +196,50 @@
       <workItem from="1568061875580" duration="1203000" />
       <workItem from="1568063085211" duration="3486000" />
       <workItem from="1568151064690" duration="4002000" />
-      <workItem from="1568322918194" duration="7500000" />
+      <workItem from="1568322918194" duration="16696000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProblemsTest_testIfAllParameterEqualZero - 2019.09.12 at 15h 59m 46s.xml">
-      <configuration name="ProblemsTest.testIfAllParameterEqualZero" configurationId="JUnit" />
+    <history-entry file="ProblemsTest_testIfaNotEqualZero - 2019.09.12 at 19h 38m 17s.xml">
+      <configuration name="ProblemsTest.testIfaNotEqualZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProblemsTest_testIfAllParameterEqualZero - 2019.09.12 at 16h 01m 03s.xml">
-      <configuration name="ProblemsTest.testIfAllParameterEqualZero" configurationId="JUnit" />
+    <history-entry file="ProblemsTest_testIfDiscriminantEqual0 - 2019.09.12 at 19h 38m 32s.xml">
+      <configuration name="ProblemsTest.testIfDiscriminantEqual0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProblemsTest_testIfAllParameterEqualZero - 2019.09.12 at 16h 01m 41s.xml">
-      <configuration name="ProblemsTest.testIfAllParameterEqualZero" configurationId="JUnit" />
+    <history-entry file="ProblemsTest_testIfDiscriminantEqual0 - 2019.09.12 at 19h 39m 51s.xml">
+      <configuration name="ProblemsTest.testIfDiscriminantEqual0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProblemsTest_testIfAllParameterEqualZero - 2019.09.12 at 16h 02m 50s.xml">
-      <configuration name="ProblemsTest.testIfAllParameterEqualZero" configurationId="JUnit" />
+    <history-entry file="ProblemsTest_testIfDiscriminantEqual0 - 2019.09.12 at 19h 40m 16s.xml">
+      <configuration name="ProblemsTest.testIfDiscriminantEqual0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProblemsTest_testIfAllParameterEqualZero - 2019.09.12 at 16h 20m 48s.xml">
-      <configuration name="ProblemsTest.testIfAllParameterEqualZero" configurationId="JUnit" />
+    <history-entry file="ProblemsTest_testIfDiscriminantEqual0 - 2019.09.12 at 19h 41m 09s.xml">
+      <configuration name="ProblemsTest.testIfDiscriminantEqual0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProblemsTest_testAbsoluteValueOfDiff - 2019.09.12 at 20h 16m 55s.xml">
+      <configuration name="ProblemsTest.testAbsoluteValueOfDiff" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProblemsTest_testAbsoluteValueOfDiff - 2019.09.12 at 20h 17m 28s.xml">
+      <configuration name="ProblemsTest.testAbsoluteValueOfDiff" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProblemsTest_testAbsoluteValueOfDiff - 2019.09.12 at 20h 17m 48s.xml">
+      <configuration name="ProblemsTest.testAbsoluteValueOfDiff" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProblemsTest_testIfNegative - 2019.09.12 at 20h 29m 40s.xml">
+      <configuration name="ProblemsTest.testIfNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProblemsTest_testIfNegative - 2019.09.12 at 20h 33m 10s.xml">
+      <configuration name="ProblemsTest.testIfNegative" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18812000" />
+    <option name="totallyTimeSpent" value="28008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27224737" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -217,7 +248,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3053435" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -226,7 +257,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32824427" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32569557" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -245,29 +276,29 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Maths.java" />
-    <entry file="file://$PROJECT_DIR$/src/ProblemsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-996">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ProblemsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="245">
+          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
