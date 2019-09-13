@@ -112,11 +112,13 @@ public class Problems {
                 if(error<=e){
                     //if n is negative then return neg mid
                    if(n<0){
-                       return (Math.round(root*100.0)/100.0)*-1;
+                       root = (Math.round(root*100.0)/100.0)*-1;
+                       return root;
                    }
 
                    else{
-                       return (Math.round(root*100.0)/100.0);
+                       root =  (Math.round(root*100.0)/100.0);
+                       return root;
                    }
 
                 }

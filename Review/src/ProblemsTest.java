@@ -72,9 +72,10 @@ public class ProblemsTest {
 
 
     @Test
+    //If n is negative, then cube root returned should be negative too
     public void testIfNegative(){
         testProblems.cubeRoot(-3);
-        assertEquals(testProblems.diff);
+        assertTrue(testProblems.diff<=0.0000001);
         assertTrue(testProblems.root<0);
     }
 
