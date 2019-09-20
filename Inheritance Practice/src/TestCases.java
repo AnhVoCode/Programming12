@@ -42,5 +42,4 @@ public class TestCases {
         assertEquals(testPlanet.toString() + "\tIs Habitable: " + testRockPlanet.isHabitable(),testRockPlanet.toString());
     }
 
-
 }
