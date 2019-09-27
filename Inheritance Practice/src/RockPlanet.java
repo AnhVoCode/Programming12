@@ -1,9 +1,9 @@
-public class RocketPlanet extends Planet {
+public class RockPlanet extends Planet {
     //Fields
     boolean habitable;
 
     //Constructor
-    RocketPlanet(int orbitTime, String designation, boolean habitable){
+    RockPlanet(int orbitTime, String designation, boolean habitable){
         super(orbitTime,designation);
         this.habitable = habitable;
     }

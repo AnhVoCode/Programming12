@@ -30,6 +30,6 @@ public class GasPlanet extends Planet{
 
     @Override
     public String toString() {
-        return super.toString() + "Color: "+ color;
+        return super.toString() + "\tHas Rings: " + hasRings + "\tColor: "+ color;
     }
 }
