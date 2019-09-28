@@ -8,7 +8,6 @@ public class Main {
         employees.add(new SalaryEmployee("Icy",2010,72000));
         employees.add(new PartTime("Mike",2017,18,14));
         employees.add(new FullTime("Michelle",2018,30,26));
-
         for(Employee e : employees){
             if (e instanceof SalaryEmployee){
                 list.add(e);
@@ -28,6 +27,5 @@ public class Main {
                 System.out.println("Full Time Employees: " + fullTimes);
             }
         }
-
     }
 }
