@@ -1,29 +1,29 @@
 package Tools.Time;
 
 public class Hour implements Theticker{
-    private int x;
+    private int hour;
     Hour(){
-        x = 0;
+        hour = 0;
     }
-    public Hour(int x){
-        this.x = x;
-    }
-
-    public int getX() {
-        return x;
+    public Hour(int hour){
+        this.hour = hour;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
     }
     public String toString(){
-        if(x < 10){
-            return "0"+x;
+        if(hour < 10){
+            return "0"+ hour;
         }
         else
-            return ""+x;
+            return ""+ hour;
     }
     public void tick(){
-        x++;
+        hour++;
     }
 }

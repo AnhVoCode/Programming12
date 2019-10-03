@@ -1,6 +1,6 @@
 package Model;
 
-public class sand extends items{
+public class Sandwich extends Items {
     public enum Size{
         SMALL(6.5), MEDIUM(8.0), LARGE(10.5);
         private double price;
@@ -11,13 +11,13 @@ public class sand extends items{
 
     Size size;
 
-    public sand(String name, Size size){
+    public Sandwich(String name, Size size){
         super(name,size.getPrice());
-        size = size;
+        this.size = size;
     }
 
     @Override
     public double getHowMuch() {
-        return 0;
+        return this.getHowMuch();
     }
 }

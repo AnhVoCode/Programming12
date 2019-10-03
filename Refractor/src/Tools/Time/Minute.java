@@ -1,30 +1,30 @@
 package Tools.Time;
 
 public class Minute implements Theticker{
-    int y;
+    int min;
     public Minute(){
-        y = 0;
+        min = 0;
     }
 
-    public Minute(int y) {
-        this.y = y;
+    public Minute(int min) {
+        this.min = min;
     }
 
-    public int getY() {
-        return y;
+    public int getMin() {
+        return min;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setMin(int min) {
+        this.min = min;
     }
     public String toString(){
-        if(y < 10){
-            return "0"+y;
+        if(min < 10){
+            return "0"+ min;
         }
         else
-            return ""+y;
+            return ""+ min;
     }
     public void tick(){
-        y++;
+        min++;
     }
 }

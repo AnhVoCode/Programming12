@@ -1,20 +1,22 @@
 package Tools;
 
-import Model.items;
+import Model.Items;
+import Tools.Time.Minute;
 import Tools.Time.Time;
+
 
 import java.util.ArrayList;
 
 public class Order {
-    ArrayList<items> theorderforacustomer = new ArrayList<>();
+    ArrayList<Items> theOrderForaCustomer = new ArrayList<>();
     Time start;
     Time end;
     boolean out;
     boolean complete;
 
-    Order(ArrayList<items> items, Time start){
+    Order(ArrayList<Items> items, Time start){
         //if not in inventory add 10 minutes to order
-        theorderforacustomer = items;
+        theOrderForaCustomer = items;
         this.start = start;
         end = new Time(start);
         for(int i = 0; i < 20;i++){

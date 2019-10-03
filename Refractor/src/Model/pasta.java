@@ -1,16 +1,20 @@
 package Model;
 
-public class pasta extends items{
-    boolean isDelux;
+public class Pasta extends Items {
+    boolean isDeluxe;
 
-    pasta(String name, double price, boolean delux){
+    public Pasta(String name, double price, boolean deluxe){
         super(name, price);
-        isDelux = delux;
+        isDeluxe = deluxe;
     }
 
+    //if deluxe add 2 bucks
     @Override
     public double getHowMuch() {
-        //if delux add 2 bucks
-        return 0;
+        if(isDeluxe=true){
+            double price = this.getHowMuch()+3;
+            return price;
+        }
+        return this.getHowMuch();
     }
 }

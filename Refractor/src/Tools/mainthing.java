@@ -1,38 +1,44 @@
 package Tools;
 
-import Model.items;
-import Model.pasta;
-import Model.pizza;
-import Model.sand;
+import Model.Items;
+import Model.Pasta;
+import Model.Pizza;
+import Model.Sandwich;
+
 
 import java.util.ArrayList;
 
-public class mainthing {
+
+public class MainThing {
     private String name;
     private ArrayList<Customer> ppl = new ArrayList<>();
     private ArrayList<Order> ordds = new ArrayList<>();
-    private ArrayList<items> invent = new ArrayList<>();
+    private ArrayList<Items> invent = new ArrayList<>();
 
-    public mainthing(String name){
+    public MainThing(String name){
         this.name = name;
         startStuff();
+    }
+
+    public ArrayList<Items> getInvent() {
+        return invent;
     }
 
     public void startStuff(){
         for(int i = 0 ; i< 5;i++){
             makePizza();
             makePasta();
-            makesand();
+            makeSandwich();
         }
     }
 
     private void makePizza() {
-        invent.add(new pizza());
+        invent.add(new Pizza("vegan",13.75,true));
     }
     private void makePasta(){
-        invent.add(new pasta());
+        invent.add(new Pasta("beef spaghetti",18.79,false));
     }
-    private void makesand(){
-        invent.add(new sand());
+    private void makeSandwich(){
+        invent.add(new Sandwich("silica", Sandwich.Size.LARGE));
     }
 }

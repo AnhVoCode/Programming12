@@ -3,14 +3,14 @@ package Tools.Time;
 public class Time implements Theticker{
     private Hour hr;
     private Minute min;
-    private secon sec;
+    private Second sec;
     public Time(){
         hr = new Hour();
         min = new Minute();
-        sec = new secon();
+        sec = new Second();
 
     }
-    public Time(Hour hr, Minute min, secon sec){
+    public Time(Hour hr, Minute min, Second sec){
         this.hr = hr;
         this.min = min;
         this.sec = sec;
@@ -37,31 +37,31 @@ public class Time implements Theticker{
         this.min = min;
     }
 
-    public secon getSec() {
+    public Second getSec() {
         return sec;
     }
 
-    public void setSec(secon sec) {
+    public void setSec(Second sec) {
         this.sec = sec;
     }
 
     public void tick(){
-        if(sec.getZ() == 59){
-            if(min.getY() == 59){
-                if(hr.getX() == 23){
-                    hr.setX(0);
-                    min.setY(0);
-                    sec.setZ(0);
+        if(sec.getSec() == 59){
+            if(min.getMin() == 59){
+                if(hr.getHour() == 23){
+                    hr.setHour(0);
+                    min.setMin(0);
+                    sec.setSec(0);
                 }
                 else{
                     hr.tick();
-                    min.setY(0);
-                    sec.setZ(0);
+                    min.setMin(0);
+                    sec.setSec(0);
                 }
             }
             else{
                 min.tick();
-                sec.setZ(0);
+                sec.setSec(0);
             }
         }
         else{
