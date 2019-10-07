@@ -17,15 +17,18 @@ public class Order {
     boolean out;
     boolean complete;
 
-    Order(ArrayList<Items> items, Time start,boolean isInInventory){
+    public Order(ArrayList<Items> items, Time start,boolean isInInventory){
+        theOrder = items;
+
         //if the item is not in inventory, start making it 10 minutes later
         this.isInInventory = isInInventory;
-        Minute m = new Minute(10);
         if (isInInventory=false){
-            
+            int startLate = start.getMin().getMin();
+           startLate +=10;
+           start.setMin(new Minute(startLate));
         }
-        theOrder = items;
         this.start = start;
+
         end = new Time(start);
         for(int i = 0; i < 20;i++){
             end.tick();
@@ -40,7 +43,11 @@ public class Order {
     public void delivered(){
         complete = true;
     }
-    public double getTotalPrice(){
-        return 0;
+    public double getTotalPrice(ArrayList<Items>items){
+        double totalPrice=0;
+        for(Items i: items){
+            totalPrice+=i.getHowMuch();
+        }
+        return totalPrice;
     }
 }

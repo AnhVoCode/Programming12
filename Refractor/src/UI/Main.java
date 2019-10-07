@@ -2,7 +2,12 @@ package UI;
 
 import Model.Items;
 
+import Model.Pizza;
+import Tools.Order;
 import Tools.Restaurant;
+import Tools.Time.Hour;
+import Tools.Time.Time;
+
 
 import java.util.ArrayList;
 
@@ -15,7 +20,10 @@ public class Main {
         for(Items i: a){
             System.out.println(i.getName());
         }
+
         //Try sample orders
+        ArrayList<Items> pizza = new ArrayList<>();
+        pizza.add(new Pizza("Vegan",13.90,false));
 
     }
 
