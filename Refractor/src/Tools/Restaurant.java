@@ -5,17 +5,16 @@ import Model.Pasta;
 import Model.Pizza;
 import Model.Sandwich;
 
-
 import java.util.ArrayList;
 
 
-public class MainThing {
+public class Restaurant {
     private String name;
     private ArrayList<Customer> ppl = new ArrayList<>();
     private ArrayList<Order> ordds = new ArrayList<>();
     private ArrayList<Items> invent = new ArrayList<>();
 
-    public MainThing(String name){
+    public Restaurant(String name){
         this.name = name;
         startStuff();
     }

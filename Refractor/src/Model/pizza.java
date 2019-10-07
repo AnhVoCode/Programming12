@@ -8,7 +8,7 @@ public class Pizza extends Items {
         isDeluxe = delux;
     }
 
-    //if deluxe add 3 bucks
+    //if the pizza is deluxe, add 3 bucks to the price
     @Override
     public double getHowMuch() {
         if (isDeluxe=true){

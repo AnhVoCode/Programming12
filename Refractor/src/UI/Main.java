@@ -1,21 +1,23 @@
 package UI;
 
 import Model.Items;
-import Model.Pizza;
-import Tools.MainThing;
+
+import Tools.Restaurant;
 
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        MainThing dinner = new MainThing("dinner");
+        //Try Restaurants' creating stuff method
+        Restaurant dinner = new Restaurant("dinner");
         dinner.startStuff();
         ArrayList<Items> a = dinner.getInvent();
         for(Items i: a){
-            System.out.println(i);
+            System.out.println(i.getName());
         }
-        //MainThing main = new MainThing();
         //Try sample orders
 
     }
+
+
 }
