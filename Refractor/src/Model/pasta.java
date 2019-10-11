@@ -11,7 +11,7 @@ public class Pasta extends Items {
     //if the pasta is deluxe, add 2 bucks to the price
     @Override
     public double getHowMuch() {
-        if(isDeluxe=true){
+        if(isDeluxe==true){
             double price = this.getHowMuch()+2;
             return price;
         }

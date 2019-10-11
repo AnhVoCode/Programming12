@@ -1,9 +1,6 @@
 package Tools;
 
 import Model.Items;
-import Tools.Time.Hour;
-import Tools.Time.Minute;
-import Tools.Time.Second;
 import Tools.Time.Time;
 
 
@@ -17,37 +14,45 @@ public class Order {
     boolean out;
     boolean complete;
 
-    public Order(ArrayList<Items> items, Time start,boolean isInInventory){
+
+    public Time getEnd() {
+        return end;
+    }
+    public Order(ArrayList<Items> items, Time start, boolean isInInventory){
         theOrder = items;
-
-        //if the item is not in inventory, start making it 10 minutes later
-        this.isInInventory = isInInventory;
-        if (isInInventory=false){
-            int startLate = start.getMin().getMin();
-           startLate +=10;
-           start.setMin(new Minute(startLate));
-        }
         this.start = start;
+        this.isInInventory = isInInventory;
 
-        end = new Time(start);
-        for(int i = 0; i < 20;i++){
-            end.tick();
+        for(int i=0;i<1200;i++){
+           start.tick();
+           end = start;
+        }
+        //if the item is not in inventory, gets 10 more minutes to make
+        if(isInInventory==false){
+            for(int i=0;i<600;i++){
+                start.tick();
+                end = start;
+            }
         }
         out = false;
         complete = false;
     }
-
-    public void deliveryInProgross(){
-        out = true;
-    }
+    //If the item is done created, and come out, delivery is in progress
+    public void deliveryInProgress(){
+            out = true;
+            System.out.println("Delivery is In Progress");
+        }
+    //If the item is completed delivering, its delivered
     public void delivered(){
-        complete = true;
+       complete = true;
+        System.out.println("The Item is delivered");
+
     }
     public double getTotalPrice(ArrayList<Items>items){
         double totalPrice=0;
         for(Items i: items){
             totalPrice+=i.getHowMuch();
         }
-        return totalPrice;
+        return Math.round(totalPrice*100.0)/100.0;
     }
 }

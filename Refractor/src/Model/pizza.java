@@ -2,21 +2,21 @@ package Model;
 
 public class Pizza extends Items {
     boolean isDeluxe;
+    double howMuch;
 
-    public Pizza(String name, double howMuch, boolean delux){
+    public Pizza(String name, double howMuch, boolean deluxe){
         super(name,howMuch);
-        isDeluxe = delux;
+        this.howMuch = howMuch;
+        isDeluxe = deluxe;
     }
 
     //if the pizza is deluxe, add 3 bucks to the price
     @Override
     public double getHowMuch() {
-        if (isDeluxe=true){
-            double price = getHowMuch()+3;
-            return price;
+        if (isDeluxe==true){
+            howMuch+=3;
         }
-
-        return this.getHowMuch();
+        return howMuch;
     }
 
 }

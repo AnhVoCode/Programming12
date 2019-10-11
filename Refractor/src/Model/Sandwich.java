@@ -18,6 +18,6 @@ public class Sandwich extends Items {
 
     @Override
     public double getHowMuch() {
-        return this.getHowMuch();
+        return size.getPrice() ;
     }
 }
