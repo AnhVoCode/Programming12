@@ -4,17 +4,12 @@ import Model.Items;
 import Model.Pasta;
 import Model.Pizza;
 import Model.Sandwich;
-import Tools.Time.Hour;
-import Tools.Time.Minute;
-import Tools.Time.Time;
-import com.sun.org.apache.xpath.internal.operations.Or;
-
 import java.util.ArrayList;
 
 
 public class Restaurant {
     private String name;
-    private ArrayList<Customer> ppl = new ArrayList<>();
+    private ArrayList<Customer> customers = new ArrayList<>();
     private ArrayList<Order> orders = new ArrayList<>();
     private ArrayList<Items> invent = new ArrayList<>();
 
@@ -36,6 +31,10 @@ public class Restaurant {
     }
     public void receiveOrder(Order order){
         orders.add(order);
+    }
+    
+    public void customers(Customer c){
+        customers.add(c);
     }
 
     private void makePizza() {

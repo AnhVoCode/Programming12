@@ -2,9 +2,11 @@ package Model;
 
 public class Pasta extends Items {
     boolean isDeluxe;
+    double price;
 
     public Pasta(String name, double price, boolean deluxe){
         super(name, price);
+        this.price = price;
         isDeluxe = deluxe;
     }
 
@@ -12,9 +14,8 @@ public class Pasta extends Items {
     @Override
     public double getHowMuch() {
         if(isDeluxe==true){
-            double price = this.getHowMuch()+2;
-            return price;
+            price+=2;
         }
-        return this.getHowMuch();
+        return price;
     }
 }

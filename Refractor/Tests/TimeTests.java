@@ -29,10 +29,8 @@ public class TimeTests {
         Time time2 = new Time(hr,min,sec);
         time2.tick();
         assertEquals(11,time2.getHr().getHour());
-        Time time3 = new Time(new Hour(2),new Minute(40), new Second(59));
-        time3.tick();
-        assertEquals(0,time3.getSec().getSec());
-        assertEquals(41,time3.getMin().getMin());
+        assertEquals(0,time2.getMin().getMin());
+        assertEquals(0,time2.getSec().getSec());
     }
 
     @Test
