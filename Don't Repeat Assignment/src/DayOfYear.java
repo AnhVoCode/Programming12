@@ -8,7 +8,7 @@ public class DayOfYear {
      * @param year - integer greater than 0; requires four-digit number
      * @return the day of year - integer greater than 0
      */
-    public int dayOfYear(int month, int dayOfMonth, int year) {
+    public static int dayOfYear(int month, int dayOfMonth, int year) {
         if (month<0||dayOfMonth<0||year<0 && year<1000){
             System.out.println("Invalid Parameter");
         }
