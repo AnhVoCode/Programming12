@@ -6,14 +6,14 @@ import org.jsoup.nodes.Document;
 import java.io.IOException;
 
 public class Website {
-    Document doc;
+    Document document;
 
     public Website(String url) throws IOException {
-        doc = Jsoup.connect(url).get();
+        document = Jsoup.connect(url).get();
     }
 
-    public String getHTML(){
-        return doc.toString();
+    public String getHtml(){
+        return document.toString();
     }
 
 }
