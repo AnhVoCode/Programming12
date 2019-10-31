@@ -7,23 +7,53 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
- * Partitioning inputs :
- * start = 0,
- * start <0,
- * start = text.length(,
- * start > text.length(),
- * text = null
+ * Testing Strategy:
+ * Partition the inputs as follows:
+ * text.length() : 0, >1
+ * start         : 0, 1<start<text.length(), text.length(), >text.length()
+ * text.length()-start: 0, 1, even > 1, odd>1
+ *
+ * Include even and odd-length reversal because only odd has a middle element that doesn't move
  */
 public class StringReverseTest {
+    /**
+     * Cover: text.length() =0,
+     *        start = 0
+     *        text.length() - start = 0
+     */
+    @Test
+    public void nullText(){
+        assertEquals("", StringReverse.reverseEnd("",0));
+    }
 
+    /**
+     * Cover: text.length() =1,
+     *        start = 0;
+     *        text.length() - start = 1;
+     */
+    @Test
+    public void textLengthEqualsOne(){
+        String expected = "H";
+        assertEquals(expected,StringReverse.reverseEnd("H",0));
+    }
+
+    /**
+     * Cover: text.length>1,
+     *        1 < start < text.length()
+     *        text.length() - start = (odd>1)
+     */
+    @Test
+    public void reverseEnd(){
+        String expected = "Hellodlrow ,";
+        assertEquals(expected,StringReverse.reverseEnd("Hello, world",5));
+    }
     /**
      * Test if start == 0
      */
     @Test
     public void startZero(){
-        List<String> expected = new ArrayList<>();
-        expected.add("dlrow ,olleh");
-        assertThat(StringReverse.reverseEnd("Hello, world",0),is(expected));
+        String expected = "dlrow ,olleH";
+        assertEquals(expected,StringReverse.reverseEnd("Hello, world",0));
     }
 
     /**
@@ -31,9 +61,8 @@ public class StringReverseTest {
      */
     @Test
     public void startLessThanZero(){
-        List<String> expected = new ArrayList<>();
-        expected.add("Start at 0 or greater ");
-        assertThat(StringReverse.reverseEnd("Hello, world",-1),is(expected));
+        String expected = "Start at 0 or greater";
+        assertEquals(expected,StringReverse.reverseEnd("Hello, world",-1));
     }
 
     /**
@@ -41,9 +70,8 @@ public class StringReverseTest {
      */
     @Test
     public void startTextLength(){
-        List<String> expected = new ArrayList<>();
-        expected.add("Hello, world");
-        assertThat(StringReverse.reverseEnd("Hello, world",11), is(expected));
+        String expected = "Hello, world";
+        assertEquals(expected, StringReverse.reverseEnd("Hello, world",12));
     }
 
     /**
@@ -51,18 +79,9 @@ public class StringReverseTest {
      */
     @Test
     public void startGreaterThanTextLength(){
-        List<String> expected = new ArrayList<>();
-        expected.add(" Start number must be less than or equal to length of the text");
-        assertThat(StringReverse.reverseEnd("Hello, world", 12), is(expected));
+        String expected =  "Start number must be less than or equal to length of the text";
+        assertEquals(expected,StringReverse.reverseEnd("Hello, world",13));
     }
 
-    /**
-     * Test if text is null
-     */
-    @Test
-    public void nullText(){
-        List<String> expected = new ArrayList<>();
-        expected.add("Text must not be null");
-        assertThat(StringReverse.reverseEnd("",2), is(expected));
-    }
+
 }
