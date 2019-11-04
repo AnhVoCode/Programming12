@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bc1170c-bc8e-4e92-973c-825011e0ab93" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="f79a03c0-fbce-4fdc-8fbf-5ac06240d781" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,61 +9,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-586710522">
+    <session id="245865000">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="775" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-556768642">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="4282" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4282" />
+          <entry key="JAVA" value="775" />
         </counts>
       </usages-collector>
     </session>
@@ -72,19 +42,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StringReverse.java">
+        <entry file="file://$PROJECT_DIR$/src/ListHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="425">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/StringReverseTest.java">
+        <entry file="file://$PROJECT_DIR$/Test/ListHolderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
+            <state relative-caret-position="340">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +78,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/StringReverse.java" />
-        <option value="$PROJECT_DIR$/Test/StringReverseTest.java" />
+        <option value="$PROJECT_DIR$/Test/ListHolderTest.java" />
       </list>
     </option>
   </component>
@@ -131,25 +100,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="String Reverse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="String Reverse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="String Reverse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="String Reverse" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateTestDocumentation" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CreateTestDocumentation" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CreateTestDocumentation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,13 +132,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572904721899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572906883180" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CreateTestDocumentation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
@@ -189,69 +163,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringReverseTest.textLengthEqualsOne">
-    <configuration name="StringReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="String Reverse" />
+  <component name="RunManager" selected="Android JUnit.ListHolderTest.sizeLessThanTwo">
+    <configuration name="ListHolderTest.sizeLessThanTwo" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringReverseTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringReverseTest.reverseEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="String Reverse" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringReverseTest" />
-      <option name="METHOD_NAME" value="reverseEnd" />
+      <option name="MAIN_CLASS_NAME" value="ListHolderTest" />
+      <option name="METHOD_NAME" value="sizeLessThanTwo" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringReverseTest.startGreaterThanTextLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="String Reverse" />
+    <configuration name="ListHolderTest.sizeLessThanTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreateTestDocumentation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringReverseTest" />
-      <option name="METHOD_NAME" value="startGreaterThanTextLength" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringReverseTest.startTextLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="String Reverse" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringReverseTest" />
-      <option name="METHOD_NAME" value="startTextLength" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringReverseTest.textLengthEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="String Reverse" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringReverseTest" />
-      <option name="METHOD_NAME" value="textLengthEqualsOne" />
+      <option name="MAIN_CLASS_NAME" value="ListHolderTest" />
+      <option name="METHOD_NAME" value="sizeLessThanTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StringReverseTest.startGreaterThanTextLength" />
-      <item itemvalue="JUnit.StringReverseTest.startTextLength" />
-      <item itemvalue="JUnit.StringReverseTest.reverseEnd" />
-      <item itemvalue="JUnit.StringReverseTest" />
-      <item itemvalue="JUnit.StringReverseTest.textLengthEqualsOne" />
+      <item itemvalue="JUnit.ListHolderTest.sizeLessThanTwo" />
+      <item itemvalue="Android JUnit.ListHolderTest.sizeLessThanTwo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringReverseTest.textLengthEqualsOne" />
-        <item itemvalue="JUnit.StringReverseTest" />
-        <item itemvalue="JUnit.StringReverseTest.reverseEnd" />
-        <item itemvalue="JUnit.StringReverseTest.startTextLength" />
-        <item itemvalue="JUnit.StringReverseTest.startGreaterThanTextLength" />
+        <item itemvalue="Android JUnit.ListHolderTest.sizeLessThanTwo" />
+        <item itemvalue="JUnit.ListHolderTest.sizeLessThanTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -260,60 +200,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2bc1170c-bc8e-4e92-973c-825011e0ab93" name="Default Changelist" comment="" />
-      <created>1572383628509</created>
+      <changelist id="f79a03c0-fbce-4fdc-8fbf-5ac06240d781" name="Default Changelist" comment="" />
+      <created>1572905209928</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572383628509</updated>
-      <workItem from="1572383631053" duration="247000" />
-      <workItem from="1572384191975" duration="2408000" />
-      <workItem from="1572554693896" duration="3178000" />
-      <workItem from="1572557979990" duration="1248000" />
-      <workItem from="1572904053143" duration="285000" />
-      <workItem from="1572904717321" duration="32000" />
-      <workItem from="1572905395333" duration="382000" />
+      <updated>1572905209928</updated>
+      <workItem from="1572905211124" duration="1698000" />
+      <workItem from="1572906918503" duration="37000" />
+      <workItem from="1572906957601" duration="929000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="StringReverseTest_reverseEnd - 2019.10.31 at 14h 34m 19s.xml">
-      <configuration name="StringReverseTest.reverseEnd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 35m 24s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 35m 53s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 36m 10s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 36m 15s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 37m 21s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest - 2019.10.31 at 14h 37m 37s.xml">
-      <configuration name="StringReverseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest_textLengthEqualsOne - 2019.10.31 at 14h 48m 48s.xml">
-      <configuration name="StringReverseTest.textLengthEqualsOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest_textLengthEqualsOne - 2019.10.31 at 14h 53m 48s.xml">
-      <configuration name="StringReverseTest.textLengthEqualsOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringReverseTest_textLengthEqualsOne - 2019.11.04 at 13h 49m 50s.xml">
-      <configuration name="StringReverseTest.textLengthEqualsOne" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7780000" />
+    <option name="totallyTimeSpent" value="2664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27148998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23710601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -322,7 +227,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,7 +236,6 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -350,24 +254,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/ListHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
+        <state relative-caret-position="425">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringReverse.java">
+    <entry file="file://$PROJECT_DIR$/Test/ListHolderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/StringReverseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -426,7 +323,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>String Reverse</last-edited>
+          <last-edited>CreateTestDocumentation</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -439,6 +336,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>junit:junit:4.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

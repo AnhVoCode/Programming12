@@ -1,9 +1,4 @@
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
@@ -48,12 +43,15 @@ public class StringReverseTest {
         assertEquals(expected,StringReverse.reverseEnd("Hello, world",5));
     }
     /**
-     * Test if start == 0
+     * Cover: text.length>1
+     *        start = 0
+     *        text.length()-start = (even>1)
+     *        text.length = odd number
      */
     @Test
     public void startZero(){
-        String expected = "dlrow ,olleH";
-        assertEquals(expected,StringReverse.reverseEnd("Hello, world",0));
+        String expected = "olleH";
+        assertEquals(expected,StringReverse.reverseEnd("Hello",0));
     }
 
     /**
