@@ -1,25 +1,14 @@
-
 import org.junit.Test;
-
-import java.lang.reflect.Type;
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class ListHolderTest {
     /**Test Strategy:
-     * ListsOfList.size < 2; >=2
+     * Partition the method as follows:
+     * ListsOfList.size < 2,
+     *
+     * If ListsOfList.size >=2, test:
      * Combining the first two lists
      * Remove the second list
+     *
+     * Need to test the size because if the size is less than 2, we can neither combine two lists nor remove the second list.
      */
-
-
-    /**
-     * Cover: ListsOfLists.size <2
-     */
-    @Test
-    public void sizeLessThanTwo() {
-        ListHolder lists = new ListHolder();
-        assertEquals(null, lists.listOfLists.size() < 2);
-    }
 }
