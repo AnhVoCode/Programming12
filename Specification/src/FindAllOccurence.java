@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-public class FindAllOccurrance {
+public class FindAllOccurence {
     /**
      * Return an array of integers that occurs in the ArrayList taken in
      * @param list  A non-null ArrayList, type Integer
      * @return      An array of integers that occur in the ArrayList taken in.
      *              If the size of the ArrayList equals zero, return an array containing -1
      */
-    public int[] findAllOccurance(ArrayList<Integer> list){
+    public int[] findAllOccurence(ArrayList<Integer> list){
         int[] integers;
         if(list.size()==0){
             integers = new int[1];
