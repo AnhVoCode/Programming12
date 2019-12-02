@@ -4,13 +4,13 @@ public class FaceCard extends Card{
     private String[] face = {"Jack","Queen","King","Ace"};
     private int[] values = {11,12,13,14};
 
-    FaceCard(int numberCard, String faceCard) {
-        super(numberCard, faceCard);
+    FaceCard(int numberCard, String faceCard, Suits suits) {
+        super(numberCard, faceCard,suits);
         this.faceCard = faceCard;
     }
 
-    //Determine value of the FaceCard
-    public int getValues(String faceCard){
+    @Override
+    public int getValue(String faceCard) {
         for(int i=0;i<face.length;i++){
             if(faceCard.equals(face[i])){
                 value = values[i];
@@ -18,7 +18,6 @@ public class FaceCard extends Card{
         }
         return value;
     }
-
     @Override
     public String getFaceCard() {
         for(int i=0;i<face.length;i++){
