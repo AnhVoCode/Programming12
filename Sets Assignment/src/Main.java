@@ -9,23 +9,42 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Set<String> uniqueWords = new HashSet<>();
         ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> sentences = new ArrayList<>();
         //Reading through file
         FileReader fr = new FileReader("iliad");
         BufferedReader br = new BufferedReader(fr);
-        String line = br.readLine();
-        while (line!= null){
+        String line;
+        while ((line = br.readLine()) != null) {
             lines.add(line);
-            if(!line.trim().equals("")){
-               String[] words = line.split("");
-
-               for(String word: words){
-                   String cleanedUpwords = word.toLowerCase().replace(",","").replace(";","").replace("?","");
-               }
-            }
-            line = br.readLine();
         }
+        int pos = 0;
+        for (int i = 0; i < lines.size(); i++) {
+            String l = lines.get(i);
+            for (int k = 0; k<l.length(); k++){
+                    if (l.substring(k, k + 1).equals(".")) {
+                        sentences.add(l.substring(pos,k + 1));
+                        pos = k + 1;
+                    }
+            }
+            pos =0;
+        }
+        fr.close();
+        br.close();
+
+        for (String s: sentences){
+            String[] words = s.split("\\s+|\\W+");
+            for(int i =0; i<words.length;i++){
+                String removeSameCases = words[i].toLowerCase()
+                        .replace(",","")
+                        .replace(";","")
+                        .replace(":","")
+                        .replace("?","");
 
 
-
+                uniqueWords.add(removeSameCases);
+            }
+        }
+        System.out.println(uniqueWords);
+        System.out.println("Number of unique words in the text: "+uniqueWords.size());
     }
 }
