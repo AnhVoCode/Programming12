@@ -13,7 +13,6 @@ public abstract class Card {
     public String getFaceCard() {
         return faceCard;
     }
-
     public int getNumberCard() {
         return numberCard;
     }
@@ -21,4 +20,19 @@ public abstract class Card {
         return value;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Card){
+            Card other = (Card) obj;
+            if(value ==other.value ){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return value;
+    }
 }
