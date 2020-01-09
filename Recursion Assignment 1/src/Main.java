@@ -2,26 +2,20 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-       ArrayList<Integer> result = new ArrayList<>();
-       result = fibonacciSequence(3);
-       for(int i : result){
-           System.out.println(i);
-       }
+        System.out.println(fibonacciSequence(3));
     }
 
-    public static ArrayList<Integer> fibonacciSequence(int n){
-        ArrayList<Integer> result = new ArrayList<>();
-        if(n==0){
-            result.add(1);
-            return result;
+    /**
+     * Return the number at the position n in the fibonacci sequence
+     * @param n - integer, position of the number in the sequence
+     * @return - integer, the number at n position
+     */
+    public static int fibonacciSequence(int n) {
+        if (n <=1) {
+            return n;
         }
         else {
-            for(int i =1;i<=n;i++){
-                int num = i+(i-1);
-                result.add(num);
-            }
-            return result;
+            return fibonacciSequence(n - 2) - fibonacciSequence(n - 1);
         }
-
     }
 }
