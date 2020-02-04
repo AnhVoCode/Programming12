@@ -1,5 +1,4 @@
 
-
 public class SortArrays {
     static int[] sortArrays(int[]array1,int[] array2){
         int length1 = array1.length;
