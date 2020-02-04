@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     static ArrayList<Node> nodes = new ArrayList<>();
+    public static void getNode()
     public static void leafNodes(Node node){
         if(node.left==0 && node.right==0){
             System.out.println(node.id);
