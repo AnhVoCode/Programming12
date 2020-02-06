@@ -5,15 +5,22 @@ import java.util.Scanner;
 
 public class Main {
     static ArrayList<Node> nodes = new ArrayList<>();
-    public static void getNode()
+    public static Node getNode(int id){
+        Node getNode=new Node(0,0,0);
+        for(Node n:nodes){
+            if(n.id ==id){
+                getNode = n;
+            }
+        }
+        return getNode;
+    }
     public static void leafNodes(Node node){
         if(node.left==0 && node.right==0){
-            System.out.println(node.id);
+            System.out.print(node.id+ " ");
         }
         else {
-            leafNodes(nodes.get(1));
-            System.out.println(nodes.get(15).id);
-            leafNodes(nodes.get(2));
+            leafNodes(getNode(node.left));
+            leafNodes(getNode(node.right));
         }
     }
     public static void setup() throws FileNotFoundException {
@@ -29,6 +36,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
        setup();
+       leafNodes(nodes.get(0));
        
     }
 }
