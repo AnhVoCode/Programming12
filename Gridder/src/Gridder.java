@@ -6,6 +6,7 @@ import flanagan.io.*;
 import java.awt.Image;
 
 
+
 public class Gridder extends javax.swing.JFrame 
                                         implements MouseListener, MouseMotionListener,
                                                             ActionListener {
@@ -645,26 +646,94 @@ public class Gridder extends javax.swing.JFrame
 
     private void ProblemOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemOneActionPerformed
         // TODO add your handling code here:
+        for(int i=0;i<100;i++){
+             int col = (int)(Math.random()*gridCount);
+             int row = (int)(Math.random()*gridCount);
+             grid[col][row] = 1;
+             draw();
+        }
     }//GEN-LAST:event_ProblemOneActionPerformed
 
     private void ProblemTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemTwoActionPerformed
         // TODO add your handling code here:
+        int col = (int)(Math.random()*gridCount);
+        for(int i=0;i<grid[col].length;i++){
+            grid[col][i]=1;
+            draw();
+        }
     }//GEN-LAST:event_ProblemTwoActionPerformed
 
     private void ProblemThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemThreeActionPerformed
         // TODO add your handling code here:
+        for(int i=0;i<grid[0].length/2;i++){
+            for(int k =0;k<grid.length;k++){
+                grid[k][i]=1;
+                draw();
+            }
+        }
+        for(int i=grid[0].length/2;i<grid[0].length;i++){
+            for (int k=0;k<grid.length;k++){
+                grid[k][i]=0;
+                draw();
+            }
+        }
+
     }//GEN-LAST:event_ProblemThreeActionPerformed
 
     private void ProblemFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemFourActionPerformed
         // TODO add your handling code here:
+        int count =0;
+        for(int i=0;i<grid[0].length;i++){
+            for(int k=0;k<grid.length;k++){
+                if(grid[k][i]==1){
+                    count++;
+                }
+            }
+        }
+       textInfo.setText(Integer.toString(count));
     }//GEN-LAST:event_ProblemFourActionPerformed
 
     private void ProblemFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemFiveActionPerformed
         // TODO add your handling code here:
+        clearGrid();
+        for(int i=0;i<grid[0].length;i++){
+            for(int k=0;k<grid.length;k++){
+                if(i==k){
+                    grid[k][i]=1;
+                    draw();
+                }
+            }
+        }
+        for(int i=0;i<grid[0].length;i++){
+            for(int k=0;k<grid.length;k++){
+                if((i+k)==grid[0].length-1){
+                    grid[k][i]=1;
+                    draw();
+                }
+            }
+        }
     }//GEN-LAST:event_ProblemFiveActionPerformed
 
     private void ProblemSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemSixActionPerformed
         // TODO add your handling code here:
+        int[][] temp= new int[grid.length][grid[0].length];
+        for(int i=0;i<grid[0].length;i++){
+            for(int k=0;k<grid.length;k++){
+                temp[k][i] = grid[k][i];
+                }
+        }
+        for(int i=0;i<temp[0].length;i++){
+            for(int k=0;k<temp.length;k++){
+                if(temp[k][i]==1){
+                    temp[k][i]=0;
+                }
+                else if(temp[k][i]==0){
+                    temp[k][i]=1;
+                }
+            }
+        }
+        grid = temp;
+        draw();
     }//GEN-LAST:event_ProblemSixActionPerformed
 
     private void ProblemSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemSevenActionPerformed
