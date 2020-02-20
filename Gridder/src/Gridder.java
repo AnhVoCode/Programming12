@@ -4,10 +4,10 @@ import java.awt.Graphics;
 import java.awt.event.*;
 import flanagan.io.*;
 import java.awt.Image;
+import java.util.ArrayList;
 
 
-
-public class Gridder extends javax.swing.JFrame 
+public class Gridder extends javax.swing.JFrame
                                         implements MouseListener, MouseMotionListener,
                                                             ActionListener {
      
@@ -738,6 +738,53 @@ public class Gridder extends javax.swing.JFrame
 
     private void ProblemSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemSevenActionPerformed
         // TODO add your handling code here:
+        int[][] temp= new int[grid.length][grid[0].length];
+        ArrayList<Integer> positions = new ArrayList<>();
+        for(int i=0;i<grid[0].length;i++) {
+            for (int k = 0; k < grid.length; k++) {
+                temp[k][i] = grid[k][i];
+            }
+        }
+        int count=0;
+        int pos=0;
+        for(int i=1;i<temp[0].length-1;i++) {
+            for (int k = 1; k < temp.length-1; k++) {
+                for(int x=i-1;x<i+2;x++){
+                    for(int y=k-1;y<=k+2;y++){
+                        if(temp[x][y]==temp[k][i]){
+
+                        }
+                    }
+                }
+                    if(temp[k+1][i]==1){  //right
+                        count++;
+                    }
+                    if(temp[k-1][i]==1){  //left
+                        count++;
+                    }
+                    if(temp[k][i-1]==1){    //above
+                        count++;
+                    }
+                    if(temp[k-1][i-1]==1){  //upperLeft
+                        count++;
+                    }
+                    if(temp[k+1][i-1]==1){  //upperRight
+                        count++;
+                    }
+                    if(temp[k][i+1]==1){      //below
+                        count++;
+                    }
+                    if(temp[k-1][i+1]==1){     //lowerLeft
+                        count++;
+                    }
+                    if(temp[k+1][i+1]==1){    //lowerRight
+                        count++;
+                    }
+                }
+
+            } //row
+        } //col
+        grid = temp;
     }//GEN-LAST:event_ProblemSevenActionPerformed
 
     private void ProblemEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemEightActionPerformed
