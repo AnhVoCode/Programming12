@@ -738,61 +738,85 @@ public class Gridder extends javax.swing.JFrame
 
     private void ProblemSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemSevenActionPerformed
         // TODO add your handling code here:
-        int[][] temp= new int[grid.length][grid[0].length];
-        ArrayList<Integer> positions = new ArrayList<>();
+        int[][] copy = new int[100][100];
         for(int i=0;i<grid[0].length;i++) {
             for (int k = 0; k < grid.length; k++) {
-                temp[k][i] = grid[k][i];
+                copy[k][i] = grid[k][i];
             }
         }
-        int count=0;
-        int pos=0;
-        for(int i=1;i<temp[0].length-1;i++) {
-            for (int k = 1; k < temp.length-1; k++) {
-                for(int x=i-1;x<i+2;x++){
-                    for(int y=k-1;y<=k+2;y++){
-                        if(temp[x][y]==temp[k][i]){
+        int[][] temp= new int[100][100];
+        for(int i=0;i<copy[0].length;i++) {
+            for (int k = 0; k < copy.length; k++) {
+                temp[k][i] = copy[k][i];
+            }
+        }
+        int count =0;
+        for(int i=0;i<temp[0].length;i++) {
+            for (int k = 0; k < temp.length; k++) {
+                int centerRow = i;
+                int centerCol = k;
+                for(int x=centerRow-1;x<i+2;x++){
+                    for(int y=centerCol-1;y<=k+2;y++){
+                        int row = x;
+                        int col = y;
+                        if(row<0||row>99 || col<0||col>99){
 
                         }
-                    }
-                }
-                    if(temp[k+1][i]==1){  //right
-                        count++;
-                    }
-                    if(temp[k-1][i]==1){  //left
-                        count++;
-                    }
-                    if(temp[k][i-1]==1){    //above
-                        count++;
-                    }
-                    if(temp[k-1][i-1]==1){  //upperLeft
-                        count++;
-                    }
-                    if(temp[k+1][i-1]==1){  //upperRight
-                        count++;
-                    }
-                    if(temp[k][i+1]==1){      //below
-                        count++;
-                    }
-                    if(temp[k-1][i+1]==1){     //lowerLeft
-                        count++;
-                    }
-                    if(temp[k+1][i+1]==1){    //lowerRight
-                        count++;
-                    }
+                        else if(temp[col][row]==temp[centerCol][centerRow]){
+
+                        }
+
+                        else if(temp[col][row]==1){
+                            count++;
+                            if(count>1){
+                                copy[centerCol][centerRow]=1;
+                                count=0;
+                            }
+                        }
+                     }
                 }
 
             } //row
         } //col
-        grid = temp;
+        grid = copy;
+        draw();
     }//GEN-LAST:event_ProblemSevenActionPerformed
 
     private void ProblemEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemEightActionPerformed
         // TODO add your handling code here:
+        int[][] temp = new int[100][100];
+        for(int i=0;i<temp[0].length;i++){
+            for(int k=0;k<temp.length;k++){
+                temp[k][i]=grid[k][i];
+            }
+        }
+        for(int i=0;i<temp[0].length;i++){
+            for (int k=0;k<temp.length;k++){
+                if(k==temp.length-1){
+                    temp[k][i]=temp[0][i];
+                }
+                else {
+                    temp[k][i]=temp[k+1][i];
+                }
+            }
+        }
+        grid =temp;
+        draw();
     }//GEN-LAST:event_ProblemEightActionPerformed
 
     private void ProblemNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemNineActionPerformed
         // TODO add your handling code here:
+        int length = grid.length-1;
+        for(int i=0;i<length/2;i++){
+            for(int k=i;k<length-i;k++){
+                int temp = grid[k][i];
+                grid[k][i]=grid[length-k][i];
+                grid[length-k][i]=grid[length-i][length-k];
+                grid[length-i][length-k]=grid[k][length-i];
+                grid[k][length-i]=temp;
+            }
+        }
+        draw();
     }//GEN-LAST:event_ProblemNineActionPerformed
 
     public static void main(String args[]) {
