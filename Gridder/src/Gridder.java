@@ -650,8 +650,8 @@ public class Gridder extends javax.swing.JFrame
              int col = (int)(Math.random()*gridCount);
              int row = (int)(Math.random()*gridCount);
              grid[col][row] = 1;
-             draw();
         }
+        draw();
     }//GEN-LAST:event_ProblemOneActionPerformed
 
     private void ProblemTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemTwoActionPerformed
@@ -659,25 +659,19 @@ public class Gridder extends javax.swing.JFrame
         int col = (int)(Math.random()*gridCount);
         for(int i=0;i<grid[col].length;i++){
             grid[col][i]=1;
-            draw();
         }
+        draw();
     }//GEN-LAST:event_ProblemTwoActionPerformed
 
     private void ProblemThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemThreeActionPerformed
         // TODO add your handling code here:
+        clearGrid();
         for(int i=0;i<grid[0].length/2;i++){
             for(int k =0;k<grid.length;k++){
                 grid[k][i]=1;
-                draw();
             }
         }
-        for(int i=grid[0].length/2;i<grid[0].length;i++){
-            for (int k=0;k<grid.length;k++){
-                grid[k][i]=0;
-                draw();
-            }
-        }
-
+        draw();
     }//GEN-LAST:event_ProblemThreeActionPerformed
 
     private void ProblemFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemFourActionPerformed
@@ -700,7 +694,6 @@ public class Gridder extends javax.swing.JFrame
             for(int k=0;k<grid.length;k++){
                 if(i==k){
                     grid[k][i]=1;
-                    draw();
                 }
             }
         }
@@ -708,10 +701,10 @@ public class Gridder extends javax.swing.JFrame
             for(int k=0;k<grid.length;k++){
                 if((i+k)==grid[0].length-1){
                     grid[k][i]=1;
-                    draw();
                 }
             }
         }
+        draw();
     }//GEN-LAST:event_ProblemFiveActionPerformed
 
     private void ProblemSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemSixActionPerformed
@@ -804,16 +797,16 @@ public class Gridder extends javax.swing.JFrame
         draw();
     }//GEN-LAST:event_ProblemEightActionPerformed
 
-    private void ProblemNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProblemNineActionPerformed
+    private void ProblemNineActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ProblemNineActionPerformed
         // TODO add your handling code here:
         int length = grid.length-1;
-        for(int i=0;i<length/2;i++){
-            for(int k=i;k<length-i;k++){
-                int temp = grid[k][i];
-                grid[k][i]=grid[length-k][i];
-                grid[length-k][i]=grid[length-i][length-k];
-                grid[length-i][length-k]=grid[k][length-i];
-                grid[k][length-i]=temp;
+       for (int i=0;i<length/2;i++){
+            for(int j=i;j<length-i;j++){
+                int temp = grid[i][j];
+                grid[i][j]=grid[j][length-i];
+                grid[j][length-i]=grid[length-i][length-j];
+                grid[length-i][length-j]=grid[length-j][i];
+                grid[length-j][i]=temp;
             }
         }
         draw();
