@@ -10,16 +10,38 @@ public class Friend {
     private String gender;
 
     //Constructor
-
     public Friend(String name, int age, String gender) {
         boolean nameInput = true;
         boolean ageInput = true;
-
+        while (nameInput){
+            try {
+                System.out.println("Input first and last name:");
+                nameInput = false;
+                String temp = name;
+                nameCheck(temp);
+            } catch (MyException e) {
+                System.out.println(e);
+                nameInput =true;
+            }
+        }
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
-
+    //Name Check Method
+    static void nameCheck(String n) throws MyException{
+        int spaceCount = 0;
+        if(n.length()<4){
+            throw new MyException(n);
+        }
+        for(int i=0;i<n.length();i++){
+            if(i==n.length()-1) break;
+            if(n.substring(i,i+1).equals(" ")) spaceCount++;
+        }
+        if(spaceCount<1){
+            throw new MyException(n);
+        }
+    }
     //Getters
 
     public int getAge() {
