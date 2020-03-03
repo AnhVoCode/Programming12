@@ -1,5 +1,6 @@
 package sample;
 
+import javax.swing.plaf.nimbus.AbstractRegionPainter;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,7 +16,7 @@ public class Friend {
         boolean ageInput = true;
         while (nameInput){
             try {
-                System.out.println("Input first and last name:");
+                System.out.println("Input first and last name: ");
                 nameInput = false;
                 String temp = name;
                 nameCheck(temp);
@@ -23,13 +24,32 @@ public class Friend {
                 System.out.println(e);
                 nameInput =true;
             }
+            break;
+        }
+        while (ageInput){
+            try {
+                System.out.println("Input age: ");
+                ageInput = false;
+                if(age<5){
+                    throw new MyException(age);
+                }
+                System.out.println("Age inputted");
+            } catch (NumberFormatException e){
+                System.out.println("This is not a number, try again:");
+                ageInput = true;
+            }
+            catch (MyException e) {
+                System.out.println(e);
+                ageInput = true;
+            }
+            break;
         }
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
     //Name Check Method
-    static void nameCheck(String n) throws MyException{
+    static void nameCheck(String n) throws MyException {
         int spaceCount = 0;
         if(n.length()<4){
             throw new MyException(n);

@@ -90,8 +90,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560973462341" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sample/Controller.java" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sorting Part 2" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -191,6 +191,7 @@
       <workItem from="1560892981074" duration="2390000" />
       <workItem from="1560972300451" duration="1175000" />
       <workItem from="1582915002116" duration="2261000" />
+      <workItem from="1583259450330" duration="4647000" />
     </task>
     <servers />
   </component>
@@ -206,106 +207,53 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="525" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1582917985324" />
-    <state x="500" y="172" key="FileChooserDialogImpl" timestamp="1582917499304">
+    <state x="500" y="172" key="FileChooserDialogImpl" timestamp="1583263781386">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="500" y="172" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582917499304" />
-    <state width="1397" height="221" key="GridCell.Tab.0.bottom" timestamp="1582918459110">
+    <state x="500" y="172" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1583263781386" />
+    <state width="1397" height="275" key="GridCell.Tab.0.bottom" timestamp="1583264109010">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="221" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582918459110" />
-    <state width="1397" height="221" key="GridCell.Tab.0.center" timestamp="1582918459110">
+    <state width="1397" height="275" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.0.center" timestamp="1583264109010">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="221" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1582918459110" />
-    <state width="1397" height="221" key="GridCell.Tab.0.left" timestamp="1582918459110">
+    <state width="1397" height="275" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.0.left" timestamp="1583264109010">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="221" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1582918459110" />
-    <state width="1397" height="221" key="GridCell.Tab.0.right" timestamp="1582918459110">
+    <state width="1397" height="275" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.0.right" timestamp="1583264109010">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="221" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1582918459110" />
+    <state width="1397" height="275" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.1.bottom" timestamp="1583264109010">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="275" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.1.center" timestamp="1583264109010">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="275" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.1.left" timestamp="1583264109010">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="275" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state width="1397" height="275" key="GridCell.Tab.1.right" timestamp="1583264109010">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="275" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1583264109010" />
+    <state x="200" y="5" key="SettingsEditor" timestamp="1583261446078">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="200" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1583261446078" />
+    <state x="415" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1583259496931">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="415" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1583259496931" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Friend Book</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

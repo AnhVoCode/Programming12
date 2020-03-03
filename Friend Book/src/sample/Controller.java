@@ -67,7 +67,7 @@ public class Controller {
     public void loadFriend(ActionEvent actionEvent) throws IOException {
         friendList.getItems().clear();
         ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
-        for (Friend f : friends){
+        for(Friend f: friends){
             friendList.getItems().add(f);
         }
     }
@@ -91,5 +91,36 @@ public class Controller {
             }
         }
 
+    }
+    //Sort friends by age (in decreasing order)
+    public void SortingAge(ActionEvent actionEvent) throws IOException {
+        friendList.getItems().clear();
+        ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
+        for (int i=0;i<friends.size();i++) {
+            for(int j=1;j<friends.size();j++){
+                if(friends.get(j-1).getAge()<friends.get(j).getAge()){
+                    int prev = friends.get(j-1).getAge();
+                    int after = friends.get(j).getAge();
+                    int temp = prev;
+                    prev = after;
+                    after = temp;
+                }
+            }
+        }
+        for(Friend f: friends){
+            friendList.getItems().add(f);
+        }
+    }
+    public void NameSort(ActionEvent actionEvent) throws IOException {
+        friendList.getItems().clear();
+        ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
+        ArrayList<String> lastName = new ArrayList<String>();
+        for(Friend f: friends){
+            for(int i =0; i<f.name.length();i++){
+                if(f.name.substring(i,i++).equals(" ")){
+
+                }
+            }
+        }
     }
 }

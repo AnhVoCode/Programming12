@@ -41,10 +41,10 @@ public class SortArrays {
         }
     }
     public static void main(String[] args) {
-        Random randint = new Random();
+        Random randInt = new Random();
         int[]num = new int[10];
         for(int i=0;i<num.length;i++){
-            num[i]= randint.nextInt(11);
+            num[i]= randInt.nextInt(11);
         }
         mergeSort(num);
         for (int i=0;i<num.length;i++){

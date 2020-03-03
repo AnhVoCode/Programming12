@@ -80,11 +80,13 @@
                                         <Font size="18.0" />
                                     </font>
                                 </Label>
-                                <Button fx:id="removeFriend" layoutX="370.0" layoutY="217.0" mnemonicParsing="false" onAction="#removeFriend" prefHeight="61.0" prefWidth="119.0" text="Remove Friend" />
+                                <Button fx:id="removeFriend" layoutX="361.0" layoutY="218.0" mnemonicParsing="false" onAction="#removeFriend" prefHeight="61.0" prefWidth="119.0" text="Remove Friend" />
                         <Button fx:id="btnLoad" layoutX="355.0" layoutY="298.0" mnemonicParsing="false" onAction="#loadFriend" text="Load" />
                         <Button fx:id="btnSave" layoutX="274.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveFriend" text="Save" />
                         <Button fx:id="btnMale" layoutX="430.0" layoutY="298.0" mnemonicParsing="false" onAction="#loadMale" text="Male" />
                         <Button fx:id="btnFemale" layoutX="503.0" layoutY="298.0" mnemonicParsing="false" onAction="#loadFemale" text="Female" />
+                        <Button fx:id="SortingAge" layoutX="255.0" layoutY="248.0" mnemonicParsing="false" onAction="#SortingAge" text="Sort by Age" />
+                        <Button fx:id="NameSort" layoutX="503.0" layoutY="248.0" mnemonicParsing="false" onAction="#NameSort" text="Sort by Name" />
                             </children>
                         </AnchorPane>
                     </content>
