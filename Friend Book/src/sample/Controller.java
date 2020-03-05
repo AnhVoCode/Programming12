@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import sun.security.x509.FreshestCRLExtension;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -98,12 +99,10 @@ public class Controller {
         ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
         for (int i=0;i<friends.size();i++) {
             for(int j=1;j<friends.size();j++){
-                if(friends.get(j-1).getAge()<friends.get(j).getAge()){
-                    int prev = friends.get(j-1).getAge();
-                    int after = friends.get(j).getAge();
-                    int temp = prev;
-                    prev = after;
-                    after = temp;
+                if(friends.get(j-1).getAge()>friends.get(j).getAge()){
+                    Friend temp = friends.get(j);
+                    friends.get(j).equals(friends.get(j-1));
+                    friends.get(j-1).equals(temp);
                 }
             }
         }
@@ -114,13 +113,17 @@ public class Controller {
     public void NameSort(ActionEvent actionEvent) throws IOException {
         friendList.getItems().clear();
         ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
-        ArrayList<String> lastName = new ArrayList<String>();
-        for(Friend f: friends){
-            for(int i =0; i<f.name.length();i++){
-                if(f.name.substring(i,i++).equals(" ")){
-
+        for (int i=0;i<friends.size();i++) {
+            for(int j=1;j<friends.size();j++){
+                if(friends.get(j-1).name.charAt(0)>friends.get(j).name.charAt(0)){
+                    Friend temp = friends.get(j);
+                    friends.get(j).equals(friends.get(j-1));
+                    friends.get(j-1).equals(temp);
                 }
             }
+        }
+        for(Friend f: friends){
+            friendList.getItems().add(f);
         }
     }
 }
