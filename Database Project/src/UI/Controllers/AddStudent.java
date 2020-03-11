@@ -1,16 +1,17 @@
 package UI.Controllers;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
 
-public class AddStudent extends Application {
+import Database.DatabaseHandler;
+import javafx.fxml.Initializable;
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class AddStudent implements Initializable {
+
 
     @Override
-    public void start(Stage primaryStage) {
-
+    public void initialize(URL location, ResourceBundle resources) {
+        handler = new DatabaseHandler();
     }
 }
