@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Mon Mar 09 11:03:51 PDT 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0170-c077-a67f-000006da84f0 
-on database directory C:\Users\2176941\IdeaProjects\Database Project\database\forum with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Fri Mar 13 10:37:50 PDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0170-d4f9-418f-0000063f5b30 
+on database directory C:\Users\2176941\IdeaProjects\Programming12\Database Project\database\forum with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/C:/Users/2176941/Downloads/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_181-b13
-user.dir=C:\Users\2176941\IdeaProjects\Database Project
+user.dir=C:\Users\2176941\IdeaProjects\Programming12\Database Project
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
