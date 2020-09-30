@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d07d6087-39cd-42de-a7eb-61915dc193a5" name="Default Changelist" comment="" />
+    <list default="true" id="d07d6087-39cd-42de-a7eb-61915dc193a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Database Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseHandler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,17 +27,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Friend Book/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -72,11 +75,12 @@
       <workItem from="1583777100461" duration="1634000" />
       <workItem from="1583948558101" duration="3147000" />
       <workItem from="1584120713491" duration="3777000" />
+      <workItem from="1588630679283" duration="909000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="0" width="816" height="860" key="#Intentions" timestamp="1584124491080">
@@ -95,9 +99,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="516" y="316" width="407" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.860@0.0.1440.860" timestamp="1583778630505" />
-    <state x="426" y="172" key="FileChooserDialogImpl" timestamp="1584121731037">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="404" y="154" key="FileChooserDialogImpl" timestamp="1588631349149">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="404" y="154" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588631349149" />
     <state x="426" y="172" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1584121731037" />
     <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1584124496332">
       <screen x="0" y="0" width="1440" height="860" />
@@ -115,14 +120,19 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1584124496332" />
-    <state x="200" y="5" key="SettingsEditor" timestamp="1584122965204">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="190" y="0" key="SettingsEditor" timestamp="1588631389804">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="190" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588631389804" />
     <state x="200" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1584122965204" />
     <state x="415" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1584120713195">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="415" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1584120713195" />
+    <state x="94" y="76" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1588631448930">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="94" y="76" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1588631448930" />
     <state x="102" y="51" key="new project wizard" timestamp="1583778084206">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

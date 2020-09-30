@@ -46,7 +46,7 @@ public class DatabaseHandler {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
     public boolean execAction(String query) {
         try {
